@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li>🏠</li>
+            <li>📊</li>
+            <li>🏃‍♂️</li>
+            <li>📅</li>
+            <li>⚙️</li>
+        </ul>
+    </aside>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard">
+        <!-- Header Section -->
+<header>
+    <h2>Welcome, <span class="highlight">Robert 👋</span></h2>
+    <p>Here's your summary progress in health the last month.</p>
+</header>
+
+
+        <!-- Progress for Today -->
+        <section class="progress">
+            <div class="progress-card">
+                <h3>Heart Rate</h3>
+                <p>82-90 <span>bpm</span></p>
+            </div>
+            <div class="progress-card">
+                <h3>Running</h3>
+                <p>10,000 <span>steps</span></p>
+            </div>
+            <div class="progress-card">
+                <h3>Calories</h3>
+                <p>450 <span>Kcal</span></p>
+            </div>
+            <div class="progress-card">
+                <h3>Sleep</h3>
+                <p>1000 <span>Seconds</span></p>
+            </div>
+        </section>
+
+        <!-- Statistics & Activity -->
+        <!-- Statistics & Activity -->
+<div class="stats-container">
+    <!-- Bar Graph -->
+    <div class="statistics">
+        <h3>Weekly Report</h3>
+        <canvas id="weeklyStatsChart"></canvas>
+    </div>
+
+    <!-- Progressive Graph -->
+    <div class="statistics">
+        <h3>Progressive Report</h3>
+        <canvas id="progressiveChart"></canvas>
+    </div>
+</div>
+
+        <!-- Challenges -->
+        <div class="challenges">
+            <div class="challenge-card">
+                <h3>100 Days Running Challenge</h3>
+                <p>65 Days Completed</p>
+            </div>
+            <div class="challenge-card">
+                <h3>Lose Weight to 15kg</h3>
+                <p>90 Days Goal</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Right Profile Section -->
+    <aside class="profile-section">
+        <div class="profile">
+            
+            <h3>Robert Fox</h3>
+            <p>@robertfox</p>
+        </div>
+        <div class="profile-stats">
+            <p>Weight: <span>65 kg</span></p>
+            <p>Height: <span>163 cm</span></p>
+            <p>Age: <span>24</span></p>
+        </div>
+        <div class="calendar">
+            <h3>Calendar</h3>
+            <div class="calendar-header">
+                <span>March 2025</span>
+            </div>
+            <div class="calendar-grid">
+                <div class="calendar-day">Sun</div>
+                <div class="calendar-day">Mon</div>
+                <div class="calendar-day">Tue</div>
+                <div class="calendar-day">Wed</div>
+                <div class="calendar-day">Thu</div>
+                <div class="calendar-day">Fri</div>
+                <div class="calendar-day">Sat</div>
+        
+                <div class="calendar-day"></div> <!-- Empty for spacing -->
+                <div class="calendar-day"></div>
+                <div class="calendar-day">1</div>
+                <div class="calendar-day">2</div>
+                <div class="calendar-day">3</div>
+                <div class="calendar-day">4</div>
+                <div class="calendar-day">5</div>
+        
+                <div class="calendar-day">6</div>
+                <div class="calendar-day">7</div>
+                <div class="calendar-day">8</div>
+                <div class="calendar-day">9</div>
+                <div class="calendar-day">10</div>
+                <div class="calendar-day">11</div>
+                <div class="calendar-day">12</div>
+        
+                <div class="calendar-day">13</div>
+                <div class="calendar-day">14</div>
+                <div class="calendar-day">15</div>
+                <div class="calendar-day">16</div>
+                <div class="calendar-day">17</div>
+                <div class="calendar-day">18</div>
+                <div class="calendar-day">19</div>
+        
+                <div class="calendar-day">20</div>
+                <div class="calendar-day">21</div>
+                <div class="calendar-day">22</div>
+                <div class="calendar-day today">23</div>
+                <div class="calendar-day">24</div>
+                <div class="calendar-day">25</div>
+                <div class="calendar-day">26</div>
+        
+                <div class="calendar-day">27</div>
+                <div class="calendar-day">28</div>
+                <div class="calendar-day">29</div>
+                <div class="calendar-day">30</div>
+                <div class="calendar-day">31</div>
+            </div>
+        </div>
+        
+        <div class="schedule">
+            <h3>Scheduled</h3>
+            <p>📅 Training - Yoga Class</p>
+            <p>🏊‍♂️ Training - Swimming</p>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
